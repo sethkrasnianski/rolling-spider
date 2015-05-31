@@ -1,0 +1,20 @@
+{
+  "name": "rolling-spider",
+  "version": "0.0.1",
+  "description": "Make the rolling spider do something",
+  "main": "index.js",
+  "dependencies": {
+    "rolling-spider": "^1.1.2",
+    "temporal": "^0.4.0"
+  },
+  "devDependencies": {
+    "babel": "^5.4.7"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "watch": "babel index.js --watch --out-file dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seth Krasnianski <sethkrasnianski@gmail.com>",
+  "license": "none"
+}
