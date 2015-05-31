@@ -1,22 +1,26 @@
-export var flight = [
-  {
-    delay: 0,
-    task: () => {
-      chopper.flatTrim();
-      chopper.startPing();
-      chopper.takeOff();
+import temporal from 'temporal';
+
+export default function(drone) {
+  temporal.queue([
+    {
+      delay: 0,
+      task: () => {
+        drone.flatTrim();
+        drone.startPing();
+        drone.takeOff();
+      }
+    },
+    {
+      delay: 3000,
+      task: () => {
+        drone.forward();
+      }
+    },
+    {
+      delay: 500,
+      task: () => {
+        drone.land();
+      }
     }
-  },
-  {
-    delay: 3000,
-    task: () => {
-      chopper.forward();
-    }
-  },
-  {
-    delay: 500,
-    task: () => {
-      chopper.land();
-    }
-  }
-];
+  ]);
+}

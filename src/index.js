@@ -1,11 +1,10 @@
 import Drone from 'rolling-spider';
-import temporal from 'temporal';
-import flight from 'flight';
+import fly from './flight';
 
 const chopper = new Drone();
 
 chopper.connect(() => {
   chopper.setup(() => {
-    temporal.queue(flight);
+    fly(chopper);
   });
 });
