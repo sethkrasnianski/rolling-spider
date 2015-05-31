@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "node build/index.js",
-    "watch": "babel index.js --watch --out-file build/index.js",
+    "watch": "babel --watch src --out-dir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Seth Krasnianski <sethkrasnianski@gmail.com>",
