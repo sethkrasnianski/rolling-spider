@@ -11,8 +11,8 @@
     "babel": "^5.4.7"
   },
   "scripts": {
-    "start": "node dist/index.js",
-    "watch": "babel index.js --watch --out-file dist/index.js",
+    "start": "node build/index.js",
+    "watch": "babel index.js --watch --out-file build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Seth Krasnianski <sethkrasnianski@gmail.com>",
