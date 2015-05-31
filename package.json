@@ -1,6 +1,6 @@
 {
   "name": "rolling-spider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make the rolling spider do something",
   "main": "index.js",
   "dependencies": {
